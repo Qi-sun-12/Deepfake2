@@ -49,7 +49,7 @@ ROOP支援多種作業系統，包括Windows、macOS和Linux。它也提供不�
 
 ## 在Google Colab上使用ROOP
 Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務，讓使用者可以在雲端執行Python程式碼。Colab還提供免費的GPU資源，非常適合用於進行深度學習相關的任務。ROOP可以在Google Colab上運行，讓你無需在本地安裝任何軟體，就能製作Deepfake影片。
-圖(免費的雲端平台)
+<img src="03.免費的雲端平台.png">
 #### 以下是在Google Colab上使用ROOP的步驟：
  1.**開啟Google Colab：** 在瀏覽器中輸入
    程式碼1
