@@ -232,10 +232,10 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
 
   ## 常見問題
   <img src="21.常見問題1.png">
-  <img src="21.常見問題2.png">
-  <img src="21.常見問題3.png">
-  <img src="21.常見問題4.png">
-  <img src="21.常見問題5.png">
+  <img src="22.常見問題2.png">
+  <img src="23.常見問題3.png">
+  <img src="24.常見問題4.png">
+  <img src="25.常見問題5.png">
   
   ## 相關問題
   圖26(相關問題)<img src="26.相關問題.png">
