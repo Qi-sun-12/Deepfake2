@@ -79,7 +79,11 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
 #### 以下是在Google Colab上使用ROOP的步驟：
  1.**開啟Google Colab：** 在瀏覽器中輸入
    <img src="05.開啟Colab.png">
-   
+   #### 提示：
+
+    - AI換臉需要一定的時間，請耐心等待。
+
+    - 如果遇到任何錯誤，請檢查程式碼中的路徑是否正確。
   ，開啟Google Colab。
   
  2.**建立新的Notebook：** 點擊「新增筆記本」，建立一個新的Jupyter Notebook。
