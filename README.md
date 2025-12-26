@@ -78,7 +78,8 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
 <img src="03.免費的雲端平台.png">
 #### 以下是在Google Colab上使用ROOP的步驟：
  1.**開啟Google Colab：** 在瀏覽器中輸入
-   圖5(程式碼1)
+   <img src="05.開啟Colab.png">
+   
   ，開啟Google Colab。
  2.**建立新的Notebook：** 點擊「新增筆記本」，建立一個新的Jupyter Notebook。
  3.**連接GPU：** 點擊「代碼執行程序」、「更改執行階段類型」，在「硬件加速器」下拉菜單中選擇“GPU”。
