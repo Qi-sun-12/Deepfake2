@@ -2,7 +2,7 @@
 
 ### Table of Contents <img src="">
 <img src="https://github.com/Qi-sun-12/Deepfake2/blob/939d717716196cadcc28b2ceddc8abd76b53b76c/01.png">
-隨著人工智慧技術的飛速發展， **AI換臉技術** 也日益成熟，Deepfake影片的製作變得越來越普及。無論是出於娛樂目的，還是為了內容創作，掌握AI換臉技術都能為你帶來更多可能性。本文將帶你深入了解Deepfake技術的原理，並提供詳細的Google Colab教學，讓你輕鬆製作出令人驚艷的AI影片。
+隨著人工智慧技術的飛速發展，<strong>AI換臉技術</strong>也日益成熟，Deepfake影片的製作變得越來越普及。無論是出於娛樂目的，還是為了內容創作，掌握AI換臉技術都能為你帶來更多可能性。本文將帶你深入了解Deepfake技術的原理，並提供詳細的Google Colab教學，讓你輕鬆製作出令人驚艷的AI影片。
 
 ## 重點摘要
 <img src="02.重點摘要.png">
