@@ -78,12 +78,8 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
 <img src="03.免費的雲端平台.png">
 #### 以下是在Google Colab上使用ROOP的步驟：
  1.**開啟Google Colab：** 在瀏覽器中輸入
-   <img src="05.開啟Colab.png">
-   #### 提示：
-
-    - AI換臉需要一定的時間，請耐心等待。
-
-    - 如果遇到任何錯誤，請檢查程式碼中的路徑是否正確。
+   #### 
+    colab.research.google.com
   ，開啟Google Colab。
   
  2.**建立新的Notebook：** 點擊「新增筆記本」，建立一個新的Jupyter Notebook。
@@ -91,18 +87,34 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
  3.**連接GPU：** 點擊「代碼執行程序」、「更改執行階段類型」，在「硬件加速器」下拉菜單中選擇“GPU”。
  
  4.**安裝ROOP：** 在Notebook中輸入以下代碼，並執行：
-   <img src="06.安裝ROOP.png"> 
+   #### 
+    !git clone https://github.com/FurkanGozukara/roop
+    %cd roop
+
+    !sed -i 's/==[0-9][0-9.]*//g' requirements.txt
+
+    !pip install opennsfw2 gfpgan onnxruntime-gpu insightface opencv-python basicsr
+
+    !sed -i 's/from torchvision.transforms.functional_tensor import rgb_to_grayscale/from torchvision.transforms.functional import rgb_to_grayscale/g' \
+    /usr/local/lib/python3.12/dist-packages/basicsr/data/degradations.py
+
+    !pip install -r requirements.txt
    
  5.**上傳影片和圖片：** 將原始影片和目標臉孔的圖片上傳到Colab。
  
  6.**執行換臉代碼：** 在Notebook中輸入以下代碼，並修改其中的路徑：
-   圖7(程式碼3)
- - 圖8(程式碼4)
-    ：目標臉孔的圖片路徑。
- - 圖9(程式碼5)
-    ：原始影片的路徑。
- - 圖10(程式碼6)
-    ：生成影片的路徑。
+   #### 
+    !python run.py --source {source_path} --target {target_path} --output {output_path} --execution-provider cuda --frame-processor face_swapper face_enhancer
+ - ####
+       source_path = "/content/drive/MyDrive/test/1226_1.jpg
+   ：目標臉孔的圖片路徑。
+- ####
+       target_path = "/content/drive/MyDrive/test/1226_2.mp4"
+  ：原始影片的路徑。
+- ####
+       output_path = "/content/drive/MyDrive/test/final_result.mp4"
+  ：生成影片的路徑。
+
  7.**下載產生影片：** 執行程式碼後，ROOP會自動進行AI換臉。完成後，你可以點擊左側的「檔案」圖標，找到生成影片，並下載到本地。
 
 #### 注意事項：
@@ -146,9 +158,12 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
 ## 步驟一：開啟Google Colab並連接GPU
 
   1.在瀏覽器中輸入
-    圖11(程式碼7)
-    ，開啟Google Colab。
+  #### 
+    colab.research.google.com
+  ，開啟Google Colab。
+  
   2.點擊「新增筆記本」，建立一個新的Jupyter Notebook。
+  
   3.點擊「代碼執行程序」、「變更執行階段類型」，在「硬件加速器」下拉菜單中選擇「GPU」。
 
 #### 提示：
@@ -159,7 +174,18 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
 ## 第二步：安裝ROOP
 
   1.在Notebook中輸入以下代碼，並執行：
-    圖12(程式碼8)
+  #### 
+    !git clone https://github.com/FurkanGozukara/roop
+    %cd roop
+
+    !sed -i 's/==[0-9][0-9.]*//g' requirements.txt
+
+    !pip install opennsfw2 gfpgan onnxruntime-gpu insightface opencv-python basicsr
+
+    !sed -i 's/from torchvision.transforms.functional_tensor import rgb_to_grayscale/from torchvision.transforms.functional import rgb_to_grayscale/g' \
+    /usr/local/lib/python3.12/dist-packages/basicsr/data/degradations.py
+
+    !pip install -r requirements.txt
     
   2.等待代碼執行完成，這可能需要幾分鐘。
 
@@ -176,23 +202,31 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
 #### 提示：
 
   - 將素材上傳到
-    圖13(程式碼9)
+    ####
+        /content/drive/MyDrive/test
     目錄下，方便後續代碼引用。
   - 確保檔案名稱和路徑正確無誤。
     
 ## 第四步：執行換臉代碼
 
   1.在Notebook中輸入以下代碼，並修改其中的路徑：
-    圖14(程式碼10) 
+  ####
+      !python run.py --source {source_path} --target {target_path} --output {output_path} --execution-provider cuda --frame-processor face_swapper face_enhancer
   2.將
-    圖15(程式碼11)
-    替換成目標臉孔的圖片路徑。
+####
+     source_path = "/content/drive/MyDrive/test/1226_1.jpg
+替換成目標臉孔的圖片路徑。
+  
   3.將
-    圖16(程式碼12)
-    替換成原始影片的路徑。
+####
+     target_path = "/content/drive/MyDrive/test/1226_2.mp4"
+替換成原始影片的路徑。
+  
   4.將
-    圖17(程式碼13)
-    替換成生成影片的路徑。 
+####
+     output_path = "/content/drive/MyDrive/test/final_result.mp4"
+替換成生成影片的路徑。 
+  
   5.執行代碼，開始AI換臉。
   
   #### 提示：
@@ -202,14 +236,17 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
     - 如果遇到任何錯誤，請檢查程式碼中的路徑是否正確。
 
   ## 第五步：下載生成影片
-
+  
     1.等待AI換臉完成，這可能需要幾分鐘到幾小時的時間，具體取決於影片的長度和複雜度。
     2.點擊Colab左側的「檔案」圖標，開啟檔案管理員。
     3.找到生成影片，通常位於
-      圖18(程式碼14)
-      目錄下，檔案名稱為你在程式碼中設定的
-      圖19(程式碼15)
-      。
+  ####
+      /content/drive/MyDrive/test
+目錄下，檔案名稱為你在程式碼中設定的
+  ####
+      final_result.mp4
+。
+    
     4.點擊產生影片，選擇「下載」，將影片儲存到本機。
 
   #### 恭喜你，成功製作了Deepfake影片！
