@@ -281,7 +281,7 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
   ROOP 是一個**完全免費且開源**的工具，任何人都可以免費下載、使用和修改。由於是開源項目，社群會不斷進行維護及更新，使用者可以從GitHub 頁面取得最新的版本。
 
   ## ROOP的優點和缺點分析
-  <img src="20.ROOP的優缺點分析.png">
+  <img src="06.ROOP的優缺點分析.png">
   
   ## ROOP的核心功能
   ### 主要功能
@@ -301,11 +301,11 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
   - **社群媒體互動：** 製作有趣的換臉短片，增加社群互動。
 
   ## 常見問題
-  <img src="21.常見問題1.png">
-  <img src="22.常見問題2.png">
-  <img src="23.常見問題3.png">
-  <img src="24.常見問題4.png">
-  <img src="25.常見問題5.png">
+  <img src="07.常見問題1.png">
+  <img src="08.常見問題2.png">
+  <img src="09.常見問題3.png">
+  <img src="10.常見問題4.png">
+  <img src="11.常見問題5.png">
   
   ## 相關問題
   圖26(相關問題)<img src="26.相關問題.png">
