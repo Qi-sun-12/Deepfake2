@@ -118,10 +118,10 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
    ：目標臉孔的圖片路徑。
  - ####
        target_path = "/content/drive/MyDrive/test/1226_2.mp4"
-  ：原始影片的路徑。
+   ：原始影片的路徑。
  - ####
        output_path = "/content/drive/MyDrive/test/final_result.mp4"
-  ：生成影片的路徑。
+   ：生成影片的路徑。
 
  7.**下載產生影片：** 執行程式碼後，ROOP會自動進行AI換臉。完成後，你可以點擊左側的「檔案」圖標，找到生成影片，並下載到本地。
 
