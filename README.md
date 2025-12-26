@@ -238,10 +238,15 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
   ## 第五步：下載生成影片
   
     1.等待AI換臉完成，這可能需要幾分鐘到幾小時的時間，具體取決於影片的長度和複雜度。
+
     2.點擊Colab左側的「檔案」圖標，開啟檔案管理員。
+
     3.找到生成影片，通常位於
-  ####
-      /content/drive/MyDrive/test
+    
+```text
+/content/drive/MyDrive/test
+```
+      
 目錄下，檔案名稱為你在程式碼中設定的
   ####
       final_result.mp4
