@@ -81,11 +81,16 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
    <img src="05.開啟Colab.png">
    
   ，開啟Google Colab。
+  
  2.**建立新的Notebook：** 點擊「新增筆記本」，建立一個新的Jupyter Notebook。
+ 
  3.**連接GPU：** 點擊「代碼執行程序」、「更改執行階段類型」，在「硬件加速器」下拉菜單中選擇“GPU”。
+ 
  4.**安裝ROOP：** 在Notebook中輸入以下代碼，並執行：
-   圖6(程式碼2) 
+   <img src="06.安裝ROOP.png"> 
+   
  5.**上傳影片和圖片：** 將原始影片和目標臉孔的圖片上傳到Colab。
+ 
  6.**執行換臉代碼：** 在Notebook中輸入以下代碼，並修改其中的路徑：
    圖7(程式碼3)
  - 圖8(程式碼4)
