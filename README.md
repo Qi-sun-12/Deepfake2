@@ -174,7 +174,7 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
   1.在瀏覽器中輸入
   #### 
     colab.research.google.com
-  ，開啟Google Colab。
+   ，開啟Google Colab。
   
   2.點擊「新增筆記本」，建立一個新的Jupyter Notebook。
   
@@ -183,6 +183,7 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
 #### 提示：
 
   - 如果沒有GPU選項，請檢查你的Google帳號是否符合Colab Pro的資格。
+    
   - 連接GPU後，Colab會自動分配GPU資源給你。
     
 ## 第二步：安裝ROOP
@@ -206,11 +207,13 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
 #### 提示：
 
   - 如果遇到任何錯誤，請檢查代碼是否輸入正確。
+    
   - 如果網路連線不穩定，可能會導致安裝失敗，請重新執行程式碼。
     
 #### 第三步：上傳影片和圖片
 
   1.點擊Colab左側的「檔案」圖標，開啟檔案管理員。
+  
   2.點擊「上傳」按鈕，將原始影片和目標臉孔的圖片上傳到Colab。
 
 #### 提示：
@@ -219,6 +222,7 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
     ####
         /content/drive/MyDrive/test
     目錄下，方便後續代碼引用。
+    
   - 確保檔案名稱和路徑正確無誤。
     
 ## 第四步：執行換臉代碼
@@ -229,17 +233,17 @@ Google Colab是一個**免費的雲端平台**，提供Jupyter Notebook的服務
   2.將
 ####
      source_path = "/content/drive/MyDrive/test/1226_1.jpg
-替換成目標臉孔的圖片路徑。
+   替換成目標臉孔的圖片路徑。
   
   3.將
 ####
      target_path = "/content/drive/MyDrive/test/1226_2.mp4"
-替換成原始影片的路徑。
+  替換成原始影片的路徑。
   
   4.將
 ####
      output_path = "/content/drive/MyDrive/test/final_result.mp4"
-替換成生成影片的路徑。 
+  替換成生成影片的路徑。 
   
   5.執行代碼，開始AI換臉。
   
